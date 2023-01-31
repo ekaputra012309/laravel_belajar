@@ -15,7 +15,7 @@
 //     return view('welcome');
 // });
 
-// route CRUD
+// route get
 Route::get('/pegawai', 'PegawaiController@index');
 Route::get('/pegawai/tambah', 'PegawaiController@tambah');
 Route::get('/pegawai/edit/{id}', 'PegawaiController@edit');
@@ -23,6 +23,7 @@ Route::get('/pegawai/hapus/{id}', 'PegawaiController@hapus');
 Route::get('/pegawai/cari', 'PegawaiController@cari');
 Route::get('/input', 'MalasngodingController@input');
 
+// route post
 Route::post('/pegawai/store', 'PegawaiController@store');
 Route::post('/pegawai/update', 'PegawaiController@update');
 Route::post('/proses', 'MalasngodingController@proses');
